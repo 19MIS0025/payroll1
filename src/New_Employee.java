@@ -74,15 +74,7 @@ public class New_Employee extends JFrame implements ActionListener{
     
     public void actionPerformed(ActionEvent ae){
        
-        String n = t1.getText();
-        String g = c1.getSelectedItem();
-        String a = t3.getText();
-        String s = t4.getText();
-        String c = t5.getText();
-        String e = t6.getText();
-        String p = t7.getText();
-        String qry = "insert into employee values(null,'"+n+"','"+g+"','"+a+"','"+s+"','"+c+"','"+e+"','"+p+"')";
-       
+        
         try{
             conn c1 = new conn();
             c1.s.executeUpdate(qry);
